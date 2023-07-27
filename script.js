@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const USER_ID = '1WJp-rUdz0i_MIR94';
 const TEMPLATE_ID = 'template_jdhujf2';
-const SERVICE_ID = 'service_popeglr';
+const SERVICE_ID = 'service_5k9fvik';
 
 
 function sendEmail(e) {
@@ -41,11 +41,7 @@ contactForm.addEventListener('submit', sendEmail);
 }
 );
 
-const hamburger = document.querySelector(".hamburger1");
-const navMenu = document.querySelector(".nav-menu1");
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+
 })
 
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
