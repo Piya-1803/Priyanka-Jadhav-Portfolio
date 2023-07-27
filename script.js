@@ -42,6 +42,6 @@ contactForm.addEventListener('submit', sendEmail);
 );
 
 
-})
+
 
 
