@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 
-const USER_ID = '1WJp-rUdz0i_MIR94';
+
 const TEMPLATE_ID = 'template_jdhujf2';
 const SERVICE_ID = 'service_5k9fvik';
 
@@ -21,7 +21,7 @@ function sendEmail(e) {
   };
 
  
-  emailjs.send(SERVICE_ID, TEMPLATE_ID, emailParams, USER_ID)
+  emailjs.send(SERVICE_ID, TEMPLATE_ID, emailParams)
     .then((response) => {
       alert('Email sent successfully!', response);
 
@@ -44,7 +44,4 @@ contactForm.addEventListener('submit', sendEmail);
 
 })
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
-}))
+
