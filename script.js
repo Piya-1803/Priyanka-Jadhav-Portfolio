@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 
-
+const USER_ID = '1WJp-rUdz0i_MIR94';
 const TEMPLATE_ID = 'template_jdhujf2';
 const SERVICE_ID = 'service_5k9fvik';
 
@@ -21,7 +21,7 @@ function sendEmail(e) {
   };
 
  
-  emailjs.send(SERVICE_ID, TEMPLATE_ID, emailParams)
+  emailjs.send(SERVICE_ID, TEMPLATE_ID, emailParams, USER_ID)
     .then((response) => {
       alert('Email sent successfully!', response);
 
